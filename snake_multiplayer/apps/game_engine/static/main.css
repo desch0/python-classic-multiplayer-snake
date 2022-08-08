@@ -1,0 +1,128 @@
+@font-face {
+	font-family: Roboto;
+	src: url(/static/Roboto-Regular.ttf);
+}
+
+html, body{
+	margin: 0;
+	background-color: #f3f3f3;
+	font-family: Roboto;
+}
+
+
+
+.info_box{
+	position: fixed;
+	top: 10px;
+	left: 50%;
+	width: 1000px;
+	height: 30px;
+	margin-left: -500px;
+	background-color: #fff;
+	border: 1px solid #f0f0f0;
+	font-size: 13px;
+	box-shadow: 0px 0px 12px 2px rgba(210,210,210,1);
+}
+.info_time_box, .info_score_box {
+	height: 25px;
+	padding: 6px 0 0 30px;
+}
+.info_time_box{
+	width: 90px;
+	border-radius: 1px 0 0 1px;
+	background-color: #E9E8E7;
+	border-right: 2px solid #C4C4C4;
+	float: left;
+}
+.info_score_box{
+	width: 95px;
+	background: #E9E8E7;
+	padding-left: 30px;
+	overflow: hidden;
+}
+
+.field_box{
+	margin: 20px auto 0;
+	width: 1200px;
+	height: 600px;
+	border: 1px solid #f0f0f0;
+	opacity: 1;
+	transition: opacity 1s;
+	z-index: 1;
+	box-shadow: 0px 0px 12px 2px rgba(210,210,210,1);
+}
+
+.cell{
+	width: 15px;
+	height: 15px;
+	float: left;
+	background-color: #fff;
+}
+
+.red{
+	background-color: red;
+}
+.blue {
+	background-color: red;
+}
+.pink{
+	background-color: pink;
+}
+.yellow{
+	background-color: yellow;
+}
+.black{
+	background-color: black;
+}
+
+.apple_cell{
+	background-color: red;
+}
+
+.lose_box{
+	position: absolute;
+	top: 250px;
+	left: 50%;
+	width: 600px;
+	height: 120px;
+	padding-top: 10px;
+	margin-left: -300px;
+	background-color: #fff;
+	box-shadow: 0 0 5px #d7d7d7;
+	display: none;
+	opacity: 0;
+	transition: opacity 0.3s;
+	z-index: 2;
+}
+.lose_info{
+	text-align: center;
+	font-weight: 200;
+	margin: 10px 0;
+}
+.lose_repeatgame_btn{
+	font-size: 13px;
+	text-align: center;
+	color: #fff;
+	width: 100px;
+	margin: 20px auto;
+	padding: 5px 10px;
+	background: linear-gradient(to top, #137bce, #55acf2);
+	cursor: pointer;
+	border: 1px solid #1482d0;
+	border-radius: 2px;
+	box-shadow: 0 0 5px #f1f1f1;
+}
+.lose_repeatgame_btn:hover{
+	background: linear-gradient(to top, #2E9AEF, #6DB7F3);
+}
+
+@media (max-height:800) {
+	.cell{
+		width: 15px;
+		height: 15px;
+	}
+	.field_box{
+		width: 750px;
+		height: 525px;
+	}
+}

@@ -1,0 +1,21 @@
+{% load static %}
+<!doctype HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="{% static 'main.css' %}">
+</head>
+<body>
+	<div class="lose_box">
+		<h2 class="lose_info">You lose</h2>
+		<div class="lose_repeatgame_btn">Start over</div>
+	</div>
+	<div class="field_box"></div>
+</body>
+</html>
+<script type="text/javascript">
+	let playerName = "{{player_name}}";
+	let fieldWidth = {{field_width}};
+	let fieldHeight = {{field_height}};
+</script>
+<script type="text/javascript" src="{% static 'core.js' %}"></script>

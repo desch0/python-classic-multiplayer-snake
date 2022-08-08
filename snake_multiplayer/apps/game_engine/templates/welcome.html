@@ -1,0 +1,16 @@
+{% load static %}
+<!doctype HTML>
+<html>
+<head>
+	<title>Welcome !</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="{% static 'welcome.css' %}">
+</head>
+<body>
+	<form action="/" method="POST" class="name_form">
+		{% csrf_token %}
+		{{form}}
+		<input type="submit" value="Accept">
+	</form>
+</body>
+</html>
