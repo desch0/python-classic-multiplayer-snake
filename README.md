@@ -11,6 +11,7 @@ At this point in time, the front-end side is made in plain HTML, without canvas,
 ```git clone https://github.com/batr1der/snake_multiplayer
 pip install -r requirements.txt
 python manage.py migrate
+python manage.py runserver
 ```
 # Example in the image
 ![Example image](example_image.jpg)
